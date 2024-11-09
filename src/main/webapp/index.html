@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Web App Deployment to Tomcat Server with GitHub, Jenkins, Docker,
+      DockerHub, Ansible
+    </title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body Styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #0d0d0d;
+        color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* Header Styling */
+      header {
+        background-color: #1a1a1a;
+        color: #fff;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      header h1 {
+        font-size: 22px;
+        color: #00aaff;
+      }
+
+      .header-profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .profile-pic {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 2px solid #00aaff;
+      }
+
+      .profile-name {
+        font-size: 16px;
+        color: #00aaff;
+      }
+
+      /* Main Content Styling */
+      main {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        flex: 1;
+      }
+
+      .left-content,
+      .right-content {
+        width: 48%;
+      }
+
+      .right-content p {
+        font-size: 15px;
+        text-align: left;
+      }
+
+      .section-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #00aaff;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+      }
+
+      .section-title:hover {
+        color: #ffaa00;
+      }
+
+      .architecture-img {
+        width: 100%;
+        border: 1px solid #333;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .architecture-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+      }
+
+      .tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .tech-item {
+        padding: 8px 12px;
+        background: #333;
+        color: #00aaff;
+        border-radius: 5px;
+        font-size: 14px;
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+
+      .tech-item:hover {
+        background: #ffaa00;
+        color: #0d0d0d;
+      }
+
+      /* Footer Styling */
+      footer {
+        padding: 15px;
+        text-align: center;
+        background-color: #1a1a1a;
+        color: #bbb;
+        font-size: 14px;
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .contact-links a {
+        color: #00aaff;
+        text-decoration: none;
+        margin: 0 8px;
+        transition: color 0.3s ease;
+      }
+
+      .contact-links a:hover {
+        color: #ffaa00;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Web App Deployment to Tomcat Server with GitHub, Jenkins, Docker,
+        DockerHub, Ansible
+      </h1>
+      <div class="header-profile">
+        <span class="profile-name">Pavithran V</span>
+        <img
+          src="https://media.licdn.com/dms/image/v2/D5603AQF79Nwh7o_qHQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1727021410408?e=1736380800&v=beta&t=9LXvUVYIlc-NZBNkF8a1vjkt3PI34AzoDMtuiE5EcDQ"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+      </div>
+    </header>
+
+    <main>
+      <div class="left-content">
+        <h2 class="section-title">Architecture</h2>
+        <img
+          src="./project_architecture.jpg"
+          alt="Project Architecture Diagram"
+          class="architecture-img"
+        />
+      </div>
+
+      <div class="right-content">
+        <h2 class="section-title">Project Overview</h2>
+        <p>
+          This project demonstrates the deployment of a Maven web application
+          into a Tomcat server using Docker containers. It incorporates various
+          DevOps tools like GitHub, Jenkins, Docker, DockerHub, and Ansible to
+          automate and streamline the process.
+        </p>
+        <br />
+        <p>
+          The project starts with the source code stored on GitHub. Jenkins is
+          used to monitor changes in the repository and trigger the build
+          process. Docker is used to containerize the Maven web application,
+          while DockerHub stores and distributes the Docker images. Ansible is
+          used for provisioning the infrastructure, setting up the Docker
+          container, and deploying the application into the Tomcat server. This
+          setup ensures a repeatable, consistent, and efficient deployment
+          process.
+        </p>
+        <br />
+        <h2 class="section-title">Technology Stack</h2>
+        <div class="tech-list">
+          <div class="tech-item">Jenkins</div>
+          <div class="tech-item">GitHub</div>
+          <div class="tech-item">Docker</div>
+          <div class="tech-item">DockerHub</div>
+          <div class="tech-item">Ansible</div>
+          <div class="tech-item">Tomcat</div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Web App Deployment to Tomcat Server Project &copy; 2024</p>
+      <div class="contact-links">
+        <a href="https://github.com/vithran21" target="_blank">GitHub</a> |
+        <a
+          href="https://www.linkedin.com/in/pavithranv-210195vp/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        |
+        <a href="mailto:www.pavithranv2195@gmail.com">Gmail</a>
+      </div>
+    </footer>
+  </body>
+</html>
